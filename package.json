@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "format": "maid lint --fix",
+    "install-tools": "maid install-tools",
+    "lint": "maid lint"
+  },
+  "dependencies": {
+    "get-stdin": "^6.0.0",
+    "slackify-markdown": "^1.1.0"
+  },
+  "devDependencies": {
+    "maid": "^0.3.0",
+    "prettier": "^1.16.4",
+    "prettier-package-json": "^2.0.1"
+  }
+}

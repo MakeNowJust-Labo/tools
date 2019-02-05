@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+// md2slack - format Markdown text as Slack message
+//
+// Usage: pbpaste | md2slack | pbcopy
+
+const slackifyMarkdown = require('slackify-markdown');
+const getStdin = require('get-stdin');
+
+const main = async () => {
+  const markdown = await getStdin();
+
+  console.log(slackifyMarkdown(markdown));
+};
+
+main().catch(err => console.error(err));
